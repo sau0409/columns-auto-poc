@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 1rem;
+    background-color: aqua;
+}
+
+.column__container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    /* will give 100px width to columns after first row is filled*/
+    grid-auto-columns: 100px;
+    gap: 10px;
+}
+
+.col {
+    padding: .5rem;
+    width: 100px;
+    height: auto;
+    background-color: blue;
+    color: aliceblue;
+    overflow-wrap: break-word;
+}
+
+.column__creator {
+    width: 200px;
+    height: 150px;
+    margin-top: 5vh;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.column__text {
+    height: 100px;
+    padding: 5px;
+}
+
+.column__btn {
+    height: 30px;
+}
